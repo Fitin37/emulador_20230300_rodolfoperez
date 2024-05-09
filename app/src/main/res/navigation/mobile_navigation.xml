@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/Hogar"
+        android:name="rodolfo.perez.emulador_20230300_rodolfoperez.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/Perfil"
+        android:name="rodolfo.perez.emulador_20230300_rodolfoperez.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="rodolfo.perez.emulador_20230300_rodolfoperez.ui.notifications.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="rodolfo.perez.emulador_20230300_rodolfoperez.FragmentLogin"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/fragmentInformation"
+        android:name="rodolfo.perez.emulador_20230300_rodolfoperez.FragmentInformation"
+        tools:layout="@layout/fragment_information" />
+</navigation>
