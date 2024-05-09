@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import rodolfo.perez.emulador_20230300_rodolfoperez.R
 import rodolfo.perez.emulador_20230300_rodolfoperez.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
@@ -31,6 +33,12 @@ class NotificationsFragment : Fragment() {
         val textView: TextView = binding.textNotifications
         notificationsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
+        }
+        val btnBotonLista = root.findViewById<Button>(R.id.btnContactos)
+        val txtListaContactos = root.findViewById<TextView>(R.id.txtLista)
+
+        btnBotonLista.setOnClickListener(){
+            txtListaContactos.setText("20230300@ricaldone.edu.sv")
         }
         return root
     }

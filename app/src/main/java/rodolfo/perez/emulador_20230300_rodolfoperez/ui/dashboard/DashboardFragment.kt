@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import rodolfo.perez.emulador_20230300_rodolfoperez.R
 import rodolfo.perez.emulador_20230300_rodolfoperez.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -32,6 +34,16 @@ class DashboardFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        val btnVer = root.findViewById<Button>(R.id.btnSee)
+        val txtNombre = root.findViewById<TextView>(R.id.txtName)
+
+
+        btnVer.setOnClickListener{
+            txtNombre.setText("Rodolfo Antonio Perez Hernandez")
+        }
+
+
         return root
     }
 

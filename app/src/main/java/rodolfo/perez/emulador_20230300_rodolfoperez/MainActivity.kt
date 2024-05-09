@@ -34,20 +34,8 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        val btnVer = findViewById<Button>(R.id.btnSee)
-        val txtNombre = findViewById<TextView>(R.id.txtName)
 
 
-        btnVer.setOnClickListener(){
-            txtNombre.setText("Rodolfo Antonio Perez Hernandez")
-        }
-
-        val btnBotonLista = findViewById<Button>(R.id.btnContactos)
-        val txtListaContactos = findViewById<TextView>(R.id.txtLista)
-
-        btnBotonLista.setOnClickListener(){
-            txtListaContactos.setText("20230300@ricaldone.edu.sv")
-        }
 
 
 
